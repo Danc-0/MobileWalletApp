@@ -1,4 +1,4 @@
-package com.danc.mobilewallet.presentation
+package com.danc.mobilewallet.presentation.fragments
 
 import android.app.AlertDialog
 import android.graphics.drawable.ColorDrawable

@@ -1,4 +1,4 @@
-package com.danc.mobilewallet.presentation
+package com.danc.mobilewallet.presentation.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -14,10 +14,8 @@ import com.danc.mobilewallet.presentation.viewmodels.SendMoneyViewModel
 import com.danc.mobilewallet.utils.State
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.scopes.FragmentScoped
-import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_send_money.*
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint

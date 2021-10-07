@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileWallet">
         <activity
-            android:name=".presentation.MainActivity"
+            android:name=".presentation.fragments.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

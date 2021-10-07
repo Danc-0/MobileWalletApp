@@ -1,7 +1,6 @@
-package com.danc.mobilewallet.presentation
+package com.danc.mobilewallet.presentation.fragments
 
 import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.util.Log

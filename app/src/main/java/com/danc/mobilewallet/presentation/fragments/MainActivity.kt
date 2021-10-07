@@ -1,4 +1,4 @@
-package com.danc.mobilewallet.presentation
+package com.danc.mobilewallet.presentation.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

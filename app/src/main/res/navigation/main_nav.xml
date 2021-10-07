@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.danc.mobilewallet.presentation.LoginFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.LoginFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_login" >
 
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.danc.mobilewallet.presentation.HomeFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -46,27 +46,27 @@
     <fragment
         android:id="@+id/sendMoneyFragment2"
         tools:layout="@layout/fragment_send_money"
-        android:name="com.danc.mobilewallet.presentation.SendMoneyFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.SendMoneyFragment"
         android:label="SendMoneyFragment" />
 
     <fragment
         android:id="@+id/transactionsFragment"
-        android:name="com.danc.mobilewallet.presentation.TransactionsFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.TransactionsFragment"
         android:label="fragment_transactions"
         tools:layout="@layout/fragment_transactions" />
     <fragment
         android:id="@+id/miniStatementFragment"
-        android:name="com.danc.mobilewallet.presentation.MiniStatementFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.MiniStatementFragment"
         android:label="fragment_mini_statement"
         tools:layout="@layout/fragment_mini_statement" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.danc.mobilewallet.presentation.ProfileFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/balanceFragment"
-        android:name="com.danc.mobilewallet.presentation.BalanceFragment"
+        android:name="com.danc.mobilewallet.presentation.fragments.BalanceFragment"
         android:label="fragment_balance"
         tools:layout="@layout/fragment_balance" />
 
