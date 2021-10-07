@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/btn_shape.xml" value="0.17592592592592593" />
+        <entry key="app/src/main/res/drawable/outlined_shape.xml" value="0.17592592592592593" />
+        <entry key="app/src/main/res/drawable/shape_corners.xml" value="0.17592592592592593" />
+        <entry key="app/src/main/res/drawable/shape_tv.xml" value="0.17592592592592593" />
+        <entry key="app/src/main/res/layout-v28/fragment_send_money.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/balance_alert.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/fragment_balance.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_mini_statement.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_send_money.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_send_money1.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/fragment_transactions.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/list_item_transaction.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/shape.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/trans_item.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

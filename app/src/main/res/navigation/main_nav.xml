@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.danc.mobilewallet.presentation.LoginFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_login" >
+
+        <action
+            android:id="@+id/to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.danc.mobilewallet.presentation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/to_sendMoneyFragment2"
+            app:destination="@id/sendMoneyFragment2" />
+        <action
+            android:id="@+id/to_last_transactionsFragment"
+            app:destination="@id/transactionsFragment" />
+        <action
+            android:id="@+id/to_view_miniStatementFragment"
+            app:destination="@id/miniStatementFragment" />
+        <action
+            android:id="@+id/to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sendMoneyFragment2"
+        tools:layout="@layout/fragment_send_money"
+        android:name="com.danc.mobilewallet.presentation.SendMoneyFragment"
+        android:label="SendMoneyFragment" />
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.danc.mobilewallet.presentation.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" />
+    <fragment
+        android:id="@+id/miniStatementFragment"
+        android:name="com.danc.mobilewallet.presentation.MiniStatementFragment"
+        android:label="fragment_mini_statement"
+        tools:layout="@layout/fragment_mini_statement" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.danc.mobilewallet.presentation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.danc.mobilewallet.presentation.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" />
+
+</navigation>

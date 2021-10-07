@@ -1,7 +1,10 @@
 package com.danc.mobilewallet.domain.models.Response
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class LoginResponse(
     @SerializedName("Customer Account")
     val CustomerAccount: String,
@@ -11,4 +14,4 @@ data class LoginResponse(
     val CustomerName: String,
 
     val email: String
-)
+) : Parcelable

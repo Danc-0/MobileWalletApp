@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(private val balanceUseCase: BalanceUseCase) : ViewModel() {
+class BalanceViewModel @Inject constructor(private val balanceUseCase: BalanceUseCase) : ViewModel() {
 
     fun postToGetBalance(balanceRequest: BalanceRequest) = flow {
         emit(State.LoadingState)
@@ -23,6 +23,5 @@ class HomeViewModel @Inject constructor(private val balanceUseCase: BalanceUseCa
             emit(e.localizedMessage)
         }
     }
-
 
 }

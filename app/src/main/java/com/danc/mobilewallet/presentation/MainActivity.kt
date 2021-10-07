@@ -16,30 +16,9 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private val TAG = "MainActivity"
-    private val viewModelLast: AllTransactionsViewModel by viewModels()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        lifecycleScope.launch {
-            viewModelLast.getAllTransactions()
-                .collect {
-                when (it) {
-                    is State.DataState<*> -> {
-                        Log.d(TAG, "onCreate: ${it.data}")
-                    }
-                    is State.ErrorState -> {
-                        Log.d(TAG, "onCreate1: ${it.exception}")
-
-                    }
-                    is State.LoadingState -> {
-                        Log.d(TAG, "onCreate2: Loading")
-
-                    }
-                }
-            }
-        }
     }
 }

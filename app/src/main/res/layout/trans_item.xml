@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/margin_10">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/margin_10"
+        app:cardCornerRadius="@dimen/margin_25"
+        app:cardElevation="@dimen/margin_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_5">
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="@dimen/margin_40"
+                android:layout_height="@dimen/margin_40"
+                android:layout_marginStart="@dimen/margin_5"
+                android:src="@drawable/ic_baseline_monetization_on_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/purple_700" />
+
+            <TextView
+                android:id="@+id/customerCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Customer ID"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/transType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:text="Transaction Date"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/transCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/customerCode" />
+
+            <TextView
+                android:id="@+id/transCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2"
+                android:text="Transaction Code"
+                app:layout_constraintStart_toStartOf="@+id/customerCode"
+                app:layout_constraintTop_toBottomOf="@+id/customerCode" />
+
+            <TextView
+                android:id="@+id/loanAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trans Amount"
+                android:layout_marginBottom="@dimen/margin_2"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/balanceAmount"
+                app:layout_constraintEnd_toEndOf="@+id/transType" />
+
+            <TextView
+                android:id="@+id/balanceAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="Balance Amount"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/transType" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
