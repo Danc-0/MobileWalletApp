@@ -3,7 +3,7 @@ package com.danc.mobilewallet.di
 import com.danc.mobilewallet.data.remote.WalletApi
 import com.danc.mobilewallet.data.repository.WalletRepositoryImpl
 import com.danc.mobilewallet.domain.repository.WalletRepository
-import com.danc.mobilewallet.utils.common.Constants
+import com.danc.mobilewallet.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

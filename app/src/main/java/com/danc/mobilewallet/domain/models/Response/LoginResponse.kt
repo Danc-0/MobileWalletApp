@@ -1,8 +1,14 @@
 package com.danc.mobilewallet.domain.models.Response
 
+import com.google.gson.annotations.SerializedName
+
 data class LoginResponse(
-    val Customer Account: String,
-    val Customer ID: String,
-    val Customer Name: String,
+    @SerializedName("Customer Account")
+    val CustomerAccount: String,
+    @SerializedName("Customer ID")
+    val CustomerID: String,
+    @SerializedName("Customer Name")
+    val CustomerName: String,
+
     val email: String
 )
