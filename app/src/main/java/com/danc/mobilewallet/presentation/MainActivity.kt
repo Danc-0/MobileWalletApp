@@ -1,7 +1,8 @@
-package com.danc.mobilewallet
+package com.danc.mobilewallet.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.danc.mobilewallet.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
